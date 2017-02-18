@@ -1,0 +1,86 @@
+@import "normalize";
+@import "coloresSociales";
+
+
+$colorIcono:white;
+$radio:50%;
+$circulo:1px solid ;
+
+
+div{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	ul{
+         display:flex;
+         align-items: center;
+         li{
+         	list-style: none;
+         	padding:10px;
+
+         	.iconos{
+         		border:$circulo;
+         		border-radius:$radio;
+         		line-height: 160px;
+         		width: 160px;
+         		text-align: center;
+
+
+
+
+         	
+         	&.fb{
+         		background: $facebook_color;
+         		transition: .5s;
+         		&:hover{
+         			background-color:darken($facebook_color,5%);
+         			transform: scale(1.1);
+         		}
+         		
+         	   }
+         	   &.tw{
+         		background: $twitter_color ;
+         		transition: .5s;
+         		&:hover{
+         			background-color:darken($twitter_color,5%);
+         			transform: scale(1.1);
+         		}
+         	   }
+         	   &.ln{
+         		background: $linkedin_color  ;
+         		transition: .5s;
+         		&:hover{
+         			background-color:darken($linkedin_color ,5%);
+         			transform: scale(1.1);
+         		}
+         	   }
+         	   &.g{
+         		background: $google_plus_color ;
+         		transition: .5s;
+         		&:hover{
+         			background-color:darken($google_plus_color,5%);
+         			transform: scale(1.1);
+         		}
+         	   }
+         	   &.pi{
+         		background: $pinterest_color;
+         		transition: .5s;
+         		&:hover{
+         			background-color:darken($pinterest_color,5%);
+         			transform: scale(1.1);
+         		}
+         	   }
+
+         	}
+
+         	
+         }
+	}
+	a
+	{
+		color:white;
+
+	}
+
+
+}
